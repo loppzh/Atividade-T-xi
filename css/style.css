@@ -65,6 +65,142 @@ section.banner p button {
     font-size: 1.3rem;
 }
 
+section.ready {
+    background-color: #fff;
+    padding: 60px 8vw;
+    text-align: center;
+  }
+  
+  section.ready h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e2a48;
+    margin-bottom: 10px;
+    margin: 40px auto 60px;
+  }
+  
+  section.ready > p {
+    font-size: 1rem;
+    color: #737373;
+    max-width: 800px;
+    margin: 0 auto 100px;
+  }
+  
+  .ready-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap; 
+  }
+  
+  .ready-image {
+    flex: 1;
+    max-width: 800px;
+  }
+  
+  .ready-image img {
+    width: 130%;
+    height: auto;
+  }
+  
+  .ready-features {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+    text-align: left;
+    max-width: 800px;
+    padding: 0 15vw;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature .icon {
+    background-color: #eaf6ff;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 2rem;
+    color: #f4b400;
+    margin-bottom: 12px;
+  }
+  
+  .feature .text-content h4 {
+    margin: 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e2a48;
+  }
+  
+  .feature .text-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  section.download {
+  background:
+    url(../src/imagem/iPhone-13-Pro-Front.png) no-repeat,
+    url(../src/imagem/iPhone-13-Pro-Front.png) no-repeat,
+    linear-gradient(#fbbc05, #fbbc05);
+  background-size:
+    200px auto,
+    220px auto,
+    cover;
+  background-position:
+    100% -95px,
+    75% 120px,
+    center;
+  border-radius: 30px;
+  padding: 70px 8vw;
+  margin: 60px auto;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.download-text {
+  flex: 1;
+  max-width: 480px;
+  color: white;
+}
+
+.download-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.download-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.download-text button {
+  background-color: #1e2a48;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+  
+  
 @media (min-width:1024px) {
     header nav{
         display: flex;
