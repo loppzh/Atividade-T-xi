@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@100..900&display=swap');
+
 html {
     font-family: "Roboto", sans-serif;
     font-size: calc(15px + 0.3986vw);
@@ -54,15 +56,18 @@ section.banner p {
 
 section.banner p button span {
     margin: 0 5px 0 0;
+    width: 50px;
 }
 
 section.banner p button {
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(37, 43, 67);
     color: white;
-    padding:  10px 20px;
+    padding:  20px 40px;
     border-radius: 5px;
     border: none;
     font-size: 1.3rem;
+    margin: 20px 0 0 20px;
 }
 
 section.ready {
@@ -149,15 +154,15 @@ section.ready {
     url(../src/imagem/iPhone-13-Pro-Front.png) no-repeat,
     linear-gradient(#fbbc05, #fbbc05);
   background-size:
-    200px auto,
-    220px auto,
+    400px auto,
+    400px auto,
     cover;
   background-position:
-    100% -95px,
-    75% 120px,
+    95% -195px,
+    65% 205px,
     center;
   border-radius: 30px;
-  padding: 70px 8vw;
+  padding: 130px 8vw;
   margin: 60px auto;
   max-width: 1100px;
   position: relative;
@@ -199,8 +204,81 @@ section.ready {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-  
-  
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 60px;
+}
+
+.services-text {
+  flex: 0 0 300px;
+  text-align: left;
+}
+
+.services-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #07070A;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  margin: 30px 0 20px;
+}
+
+.services-text p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #39393B;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  max-width: 860px;
+}
+
+.service-card {
+  background-color: #f3f3f3;
+  width: 360px;
+  height: 360px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service-card.highlight {
+  background-color: #fdd102;
+  color: #07070A;
+}
+
+.service-card .icon {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.service-card h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #07070A;
+  margin-bottom: 10px;
+  margin: 20px 0 20px 0;
+  line-height: 1.2;
+}
+
+.service-card p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #39393B;
+  margin: 0;
+}
+
+
 @media (min-width:1024px) {
     header nav{
         display: flex;
