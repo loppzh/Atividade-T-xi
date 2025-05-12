@@ -10,11 +10,21 @@ html {
 a{
     color: black;
     text-decoration: none;
+    font-size: 1rem;
+    font-family: "roboto", sans-serif;
+    margin: 10px;
 }
 
 a.logo{
     display: flex;
-    align-items: center;
+}
+
+a.logo img{
+  margin-right: 10px;
+}
+
+a.headprod{
+  margin: 80px
 }
 
 a.login {
@@ -82,6 +92,7 @@ section.ready {
     color: #1e2a48;
     margin-bottom: 10px;
     margin: 40px auto 60px;
+    font-family: "Cabin";
   }
   
   section.ready > p {
@@ -89,6 +100,8 @@ section.ready {
     color: #737373;
     max-width: 800px;
     margin: 0 auto 100px;
+    font-family: "Cabin";
+    font-weight: 400;
   }
   
   .ready-content {
@@ -128,24 +141,27 @@ section.ready {
   
   .feature .icon {
     background-color: #eaf6ff;
-    padding: 15px;
+    padding: 25px;
     border-radius: 12px;
     font-size: 2rem;
     color: #f4b400;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
   }
   
   .feature .text-content h4 {
     margin: 0 0 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #1e2a48;
+    margin-bottom: 30px;
+    font-family: "Cabin";
   }
   
   .feature .text-content p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #666;
+    font-family: "Cabin";
   }
 
   section.download {
@@ -183,14 +199,20 @@ section.ready {
 }
 
 .download-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 20px;
+  font-family: "Cabin" sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .download-text p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  font-family: "Cabin" sans-serif;
+  font-weight: 400;
+
 }
 
 .download-text button {
@@ -229,7 +251,7 @@ section.ready {
 .services-text p {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #39393B;
+  color: #07070A;
   line-height: 1.6;
 }
 
@@ -245,7 +267,6 @@ section.ready {
   width: 360px;
   height: 360px;
   padding: 30px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -278,7 +299,190 @@ section.ready {
   margin: 0;
 }
 
+section.contact {
+  padding: 50px 5vw;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
 
+.contact-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-text p {
+  color: #39393B;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+.form-left,
+.form-right,
+.form-map {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-left input,
+.form-right input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #FAD007;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  color: #39393B;
+}
+
+
+.contact-form textarea[name="message"] {
+  height: 20rem;           
+  width: 200%;             
+  max-width: 200%;           
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #FAD007;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+
+
+.contact-form button {
+  background-color: #FAD007;
+  color: #;
+  border: none;
+  padding: 20px 15px 20px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.7rem;
+  width: 100px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e4bc00;
+}
+
+.form-map iframe {
+  width: 600px;
+  height: 90%;
+  min-height: 750px;
+  border: 0;
+
+}
+
+/*############################FOOOOOTEER##########################################################################################*/
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 8vw;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 0.1;
+  min-width: 250px;
+  text-align: left;
+  direction: ltr;
+}
+
+.footer-left p {
+  margin-bottom: 15px;
+  color: #737373;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.social-icons a {
+  color: #FAD007;
+  font-size: 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.footer-right {
+  flex: 0.2;
+  text-align: left;
+  direction: rtl;
+
+}
+
+.footer-right h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #737373;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  background-color: #E1F4FF; height: 100%;
+  padding: 20px 10px;
+  font-weight: bold;
+  color: #737373;
+  font-size: 0.65rem;
+  
+}
+
+
+/*############################FOOOOOTEER##########################################################################################*/
 @media (min-width:1024px) {
     header nav{
         display: flex;
